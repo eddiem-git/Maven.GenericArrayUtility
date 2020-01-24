@@ -15,10 +15,8 @@ public class GetNumberOfOccurrencesTest {
         Integer expected = 3;
         Integer[] inputArray = {1, 2, valueToEvaluate, 8, 4, 5, valueToEvaluate, 0, 9, 8, valueToEvaluate};
         ArrayUtility<Integer> arrayUtility = new ArrayUtility<Integer>(inputArray);
-
         // When
         Integer actual = arrayUtility.getNumberOfOccurrences(valueToEvaluate);
-
         // Then
         Assert.assertEquals(expected, actual);
     }
